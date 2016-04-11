@@ -1,0 +1,24 @@
+<h1>Edit Products</h1>
+<!-- <p>Find me in app/views/products/edit.html.erb</p> -->
+
+<p>
+  <%= link_to "Back", @product %>
+</p>
+
+<%= form_for @product do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :price_in_cents %><br>
+    <%= f.text_field :price_in_cents %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
